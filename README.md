@@ -129,9 +129,6 @@ After closing a tracking session (by pressing 'q'), a summary will be displayed 
 
 This project is open source and available under the [MIT License](LICENSE).
 
-##  Author
-
-Your Name - [Your GitHub Profile](https://github.com/yourusername)
 
 ##  Acknowledgments
 
