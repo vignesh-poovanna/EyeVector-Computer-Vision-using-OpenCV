@@ -1,8 +1,8 @@
-#  EyeVector
+# EyeVector
 
 EyeVector is a real-time eye tracking application that uses computer vision to detect blinks, track gaze direction, and control system audio through double-blink gestures. Built with Python, OpenCV, and dlib.
 
-##  Features
+## Features
 
 - **Blink Detection**: Automatically detects and counts eye blinks using facial landmark detection
 - **Gaze Tracking**: Tracks eye gaze direction (Left, Right, Center) in real-time
@@ -11,13 +11,13 @@ EyeVector is a real-time eye tracking application that uses computer vision to d
 - **Session Summary**: Displays detailed statistics after each tracking session
 - **Modern GUI**: Clean and intuitive tkinter-based user interface
 
-##  Requirements
+## Requirements
 
 - Python 3.7+
 - Webcam/Camera
 - Windows OS (for audio control functionality)
 
-##  Dependencies
+## Dependencies
 
 ```
 opencv-python
@@ -34,8 +34,8 @@ tkinter (usually included with Python)
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/EyeVector.git
-cd EyeVector
+git clone https://github.com/vignesh-poovanna/EyeVector-Computer-Vision-using-OpenCV.git
+cd EyeVector-Computer-Vision-using-OpenCV
 ```
 
 ### 2. Install Python dependencies
@@ -51,7 +51,7 @@ pip install opencv-python dlib numpy scipy imutils pycaw comtypes
 **Note**: Installing `dlib` on Windows may require additional steps. If you encounter issues, you may need to:
 - Install CMake: `pip install cmake`
 - Install Visual C++ Build Tools
-- Or download pre-built wheels from [here](https://github.com/z-mahmud22/D Lib_Windows_Python3.x_Prebuilt_file)
+
 
 ### 3. Download the facial landmark predictor
 
@@ -62,7 +62,7 @@ Extract it and place it in the project directory (same folder as `eyevector.py`)
 
 Alternatively, if you already have the file, ensure it's named exactly: `shape_predictor_68_face_landmarks.dat`
 
-##  Usage
+## Usage
 
 ### Running the Application
 
@@ -95,7 +95,7 @@ After closing a tracking session (by pressing 'q'), a summary will be displayed 
 - Final gaze direction for left and right eyes
 - Final mute/unmute status
 
-##  How It Works
+## How It Works
 
 1. **Face Detection**: Uses dlib's frontal face detector to locate faces in the video stream
 2. **Landmark Detection**: Extracts 68 facial landmarks, focusing on eye regions
@@ -104,14 +104,14 @@ After closing a tracking session (by pressing 'q'), a summary will be displayed 
 5. **Double Blink Detection**: Monitors blink timing to detect rapid consecutive blinks
 6. **Audio Control**: Uses Windows COM interfaces (via pycaw) to control system audio
 
-##  Notes
+## Notes
 
 - Works best in well-lit environments
 - Ensure your face is clearly visible and centered in the camera frame
 - The application requires Windows for audio control features
 - For best results, sit approximately 1-2 feet from your webcam
 
-##  Troubleshooting
+## Troubleshooting
 
 **Issue**: "Could not toggle mute" error
 - **Solution**: Ensure you're running on Windows and have administrator privileges if needed
@@ -125,12 +125,15 @@ After closing a tracking session (by pressing 'q'), a summary will be displayed 
 **Issue**: "shape_predictor_68_face_landmarks.dat not found"
 - **Solution**: Download the file from the dlib models repository and place it in the project directory
 
-##  License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
+## Author
 
-##  Acknowledgments
+**Vignesh Poovanna** - [GitHub Profile](https://github.com/vignesh-poovanna)
+
+## Acknowledgments
 
 - dlib library for facial landmark detection
 - OpenCV for computer vision capabilities
@@ -139,4 +142,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 ⭐ If you find this project useful, please consider giving it a star!
-
