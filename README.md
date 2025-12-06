@@ -56,7 +56,7 @@ pip install opencv-python dlib numpy scipy imutils pycaw comtypes
 ### 3. Download the facial landmark predictor
 
 Download the `shape_predictor_68_face_landmarks.dat` file from:
-- [dlib's models repository](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+- [dlib's models repository](https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2)
 
 Extract it and place it in the project directory (same folder as `eyevector.py`).
 
